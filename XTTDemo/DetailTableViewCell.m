@@ -34,7 +34,7 @@
     CGFloat space = 42.5;
     CGFloat w = ([UIScreen mainScreen].bounds.size.width -2*space - 2*30)/3;
     
-    return CGSizeMake(w, 30);
+    return CGSizeMake(w, 35);
     
 }
 

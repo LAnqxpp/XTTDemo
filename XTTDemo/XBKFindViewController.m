@@ -27,8 +27,9 @@
 {
     UIButton *closeBtn =[UIButton buttonWithType:UIButtonTypeCustom];
     [self.view addSubview:closeBtn];
+    closeBtn.backgroundColor = [UIColor redColor];
     [closeBtn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
-    
+    [closeBtn addTarget:self action:@selector(dismiss:) forControlEvents:UIControlEventTouchUpInside];
     [closeBtn mas_makeConstraints:^(MASConstraintMaker *make) {
        
         make.top.mas_equalTo(self.view.mas_top).offset(40);
