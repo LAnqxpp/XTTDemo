@@ -26,19 +26,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    CAGradientLayer *gl = [CAGradientLayer layer];
-     gl.frame = CGRectMake(0,0,375,739.5);
-     gl.startPoint = CGPointMake(0.5, 0);
-     gl.endPoint = CGPointMake(0.5, 0.41);
-     gl.colors = @[(__bridge id)[UIColor colorWithRed:255/255.0 green:255/255.0 blue:255/255.0 alpha:1.0].CGColor, (__bridge id)[UIColor colorWithRed:244/255.0 green:245/255.0 blue:249/255.0 alpha:1.0].CGColor];
-     gl.locations = @[@(0), @(1.0f)];
-     
-     [self.tableView.layer addSublayer:gl];
-    
-    UIView *backgroundViews = [[UIView alloc]init];
-    [backgroundViews.layer addSublayer:gl];
-    self.tableView.backgroundView = backgroundViews;
+    self.tableView.separatorStyle= UITableViewCellSeparatorStyleNone;
+    self.tableView.emptyDataSetSource = self;
+    self.tableView.emptyDataSetDelegate = self;
 
     
     self.dataSource = [NSMutableArray array];
@@ -251,4 +241,101 @@
     
     return _dataList;
 }
+
+
+
+#pragma mark - DZNEmptyDataSetSource Methods
+
+- (NSAttributedString *)titleForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *text = @"更多阶段课程正在定制中~~~";
+    
+    NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraphStyle.alignment = NSTextAlignmentCenter;
+    
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0],
+                                 NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#000000"],
+                                 NSParagraphStyleAttributeName: paragraphStyle};
+    
+    return [[NSMutableAttributedString alloc] initWithString:text attributes:attributes];
+}
+
+- (NSAttributedString *)descriptionForEmptyDataSet:(UIScrollView *)scrollView
+{
+    NSString *text = @"即将上线哦！";
+    
+    NSMutableParagraphStyle *paragraphStyle = [NSMutableParagraphStyle new];
+    paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
+    paragraphStyle.alignment = NSTextAlignmentCenter;
+    
+    NSDictionary *attributes = @{NSFontAttributeName: [UIFont systemFontOfSize:14.0],
+                                 NSForegroundColorAttributeName: [UIColor colorWithHexString:@"#000000"],
+                                 NSParagraphStyleAttributeName: paragraphStyle};
+    
+    return [[NSMutableAttributedString alloc] initWithString:text attributes:attributes];
+}
+
+- (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state
+{
+    NSString *text = @"催一催";
+    UIFont *font = [UIFont systemFontOfSize:14];
+    UIColor *textColor = [UIColor redColor];
+    NSMutableDictionary *attributes = [NSMutableDictionary new];
+      if (font) [attributes setObject:font forKey:NSFontAttributeName];
+      if (textColor) [attributes setObject:textColor forKey:NSForegroundColorAttributeName];
+      
+      return [[NSAttributedString alloc] initWithString:text attributes:attributes];
+    
+}
+
+
+
+- (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return [UIImage imageNamed:@"placeholder_dropbox"];
+}
+
+- (UIColor *)backgroundColorForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return [UIColor colorWithHexString:@"#F4F5F9"];
+}
+
+- (UIView *)customViewForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return nil;
+}
+
+- (CGFloat)spaceHeightForEmptyDataSet:(UIScrollView *)scrollView
+{
+    return 0;
+}
+
+- (CGFloat)verticalOffsetForEmptyDataSet:(UIScrollView *)scrollView {
+    
+      return -self.tableView.tableHeaderView.frame.size.height/2.0f;
+}
+
+#pragma mark - DZNEmptyDataSetSource Methods
+
+- (BOOL)emptyDataSetShouldAllowTouch:(UIScrollView *)scrollView
+{
+    return YES;
+}
+
+- (BOOL)emptyDataSetShouldAllowScroll:(UIScrollView *)scrollView
+{
+    return NO;
+}
+
+- (void)emptyDataSet:(UIScrollView *)scrollView didTapView:(UIView *)view
+{
+
+    NSLog(@"%s",__FUNCTION__);
+}
+- (void)emptyDataSet:(UIScrollView *)scrollView didTapButton:(UIButton *)button
+{
+    NSLog(@"%s",__FUNCTION__);
+}
+
 @end

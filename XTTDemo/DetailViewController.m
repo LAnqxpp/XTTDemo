@@ -8,6 +8,8 @@
 
 #import "DetailViewController.h"
 #import "DetailTableViewCell.h"
+#import "FeedBackViewController.h"
+#import "UIViewController+KKExtension.h"
 @interface DetailViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (nonatomic, strong) UILabel *testLabel;
 @property (nonatomic,strong) UITableView *tableView;
@@ -23,13 +25,8 @@
     self.title = @"测试详情页面";
     self.view.backgroundColor = [UIColor whiteColor];
 
-//    self.testLabel = [[UILabel alloc] init];
-//    self.testLabel.text = @"这是一个测试详情页面\n点击空白处返回上一级页面或关闭页面";
-//    self.testLabel.numberOfLines = 0;
-//    self.testLabel.textAlignment = NSTextAlignmentCenter;
-//    self.testLabel.textColor = [UIColor blackColor];
-//    self.testLabel.font = [UIFont systemFontOfSize:20];
-//    [self.view addSubview:self.testLabel];
+    UIBarButtonItem *rightItem = [[UIBarButtonItem alloc] initWithTitle:@"反馈" style:UIBarButtonItemStylePlain target:self action:@selector(feedback)];
+      self.navigationItem.rightBarButtonItem = rightItem;
     
     [self.view addSubview:self.tableView];
 }
@@ -39,6 +36,12 @@
 
 //    [self.testLabel sizeToFit];
 //    self.testLabel.center = self.view.center;
+}
+
+- (void)feedback
+{
+     FeedBackViewController *vc = [[FeedBackViewController alloc] init];
+    [self modal:vc controllerRect:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width,  [UIScreen mainScreen].bounds.size.height)];
 }
 
 - (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
@@ -71,7 +74,8 @@
         _tableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height) style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
-        _tableView.rowHeight = 200;
+        _tableView.rowHeight = 169;
+        _tableView.separatorStyle= UITableViewCellSeparatorStyleNone;
         [_tableView registerNib:[UINib nibWithNibName:@"DetailTableViewCell" bundle:nil] forCellReuseIdentifier:@"DetailTableViewCellId"];
     }
     

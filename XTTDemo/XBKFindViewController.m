@@ -19,6 +19,8 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
     
+   
+    
     [self addUI];
     // Do any additional setup after loading the view.
 }
@@ -101,6 +103,20 @@
     
     return item;
     
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+     FindCollectionViewCell *cell = (FindCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+    cell.titleLab.backgroundColor = [UIColor redColor];
+    
+
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+    FindCollectionViewCell *cell = (FindCollectionViewCell *)[collectionView cellForItemAtIndexPath:indexPath];
+      cell.titleLab.backgroundColor = [UIColor whiteColor];
+
 }
 
 -(UICollectionReusableView *)collectionView:(UICollectionView *)collectionView viewForSupplementaryElementOfKind:(NSString *)kind atIndexPath:(NSIndexPath *)indexPath

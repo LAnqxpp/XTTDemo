@@ -12,6 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#F4F5F9"];
+
     self.selectClassLab.textColor = [UIColor colorWithHexString:@"#FF5B57"];
     self.rmbLab.textColor = [UIColor colorWithHexString:@"#FF5B57"];
     self.subTitleLab.textColor = [UIColor colorWithHexString:@"#8E8E92"];

@@ -12,6 +12,9 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
+    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#F4F5F9"];
+    self.lineView.backgroundColor = [UIColor colorWithHexString:@"#E5E5EA"];
+
     NSString *titleString = @" 我是标题！我是标题！我是标！我是标题 我是标题！我是标题！我是标！我是标题 ！";
          //创建  NSMutableAttributedString 富文本对象
          NSMutableAttributedString *maTitleString = [[NSMutableAttributedString alloc] initWithString:titleString];

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoadDataListBaseViewController : UITableViewController<ZJJTimeCountDownDelegate>
+@interface LoadDataListBaseViewController : UITableViewController<ZJJTimeCountDownDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 @property(nonatomic,strong) NSMutableArray *dataList;
 
 @property(nonatomic,strong) ZJJTimeCountDown * countDown;

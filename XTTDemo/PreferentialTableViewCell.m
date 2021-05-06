@@ -12,7 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#F4F5F9"];
+
     
     [self setupTimeLabelP];
     

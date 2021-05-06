@@ -17,10 +17,10 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iiV-eN-PUO">
-                        <rect key="frame" x="15" y="15" width="339" height="108"/>
+                        <rect key="frame" x="15" y="6" width="339" height="126"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-67-Pqa">
-                                <rect key="frame" x="15" y="14" width="140" height="80"/>
+                                <rect key="frame" x="15" y="23" width="140" height="80"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="hEw-Yv-CY4"/>
@@ -28,31 +28,31 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="六年级60s摸底" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rnP-S0-6cs">
-                                <rect key="frame" x="165.5" y="14" width="163" height="17"/>
+                                <rect key="frame" x="165.5" y="23" width="163" height="17"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="更加了解你" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ycb-gq-4rZ">
-                                <rect key="frame" x="165.5" y="42.5" width="163" height="14.5"/>
+                                <rect key="frame" x="165.5" y="51.5" width="163" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥880" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zTg-na-RL1">
-                                <rect key="frame" x="276" y="72.5" width="52.5" height="21.5"/>
+                                <rect key="frame" x="276" y="81.5" width="52.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9班可选" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fmT-v2-LHG">
-                                <rect key="frame" x="165.5" y="76" width="44.5" height="14.5"/>
+                                <rect key="frame" x="165.5" y="85" width="44.5" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="zTg-na-RL1" firstAttribute="trailing" secondItem="rnP-S0-6cs" secondAttribute="trailing" id="8QM-nb-jcK"/>
                             <constraint firstItem="rnP-S0-6cs" firstAttribute="top" secondItem="S6L-67-Pqa" secondAttribute="top" id="Ccm-ss-58a"/>
@@ -70,9 +70,9 @@
                     </view>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="iiV-eN-PUO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="34R-m4-b2b"/>
+                    <constraint firstItem="iiV-eN-PUO" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="34R-m4-b2b"/>
                     <constraint firstAttribute="trailing" secondItem="iiV-eN-PUO" secondAttribute="trailing" constant="15" id="Baq-N8-6nW"/>
-                    <constraint firstAttribute="bottom" secondItem="iiV-eN-PUO" secondAttribute="bottom" constant="15" id="Oaf-1y-tii"/>
+                    <constraint firstAttribute="bottom" secondItem="iiV-eN-PUO" secondAttribute="bottom" constant="6" id="Oaf-1y-tii"/>
                     <constraint firstItem="iiV-eN-PUO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="Z4y-3T-o3p"/>
                 </constraints>
             </tableViewCellContentView>

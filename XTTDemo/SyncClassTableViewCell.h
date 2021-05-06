@@ -16,6 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (weak, nonatomic) IBOutlet UICollectionView *collectionView;
 @property (weak, nonatomic) IBOutlet UILabel *rmbLab;
 @property (weak, nonatomic) IBOutlet UILabel *selectClassLab;
+@property (weak, nonatomic) IBOutlet UIView *lineView;
 
 @end
 

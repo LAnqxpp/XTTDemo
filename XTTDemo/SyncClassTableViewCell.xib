@@ -17,7 +17,7 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1GZ-vn-oDK">
-                        <rect key="frame" x="15" y="15" width="336" height="151"/>
+                        <rect key="frame" x="15" y="6" width="336" height="169"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hcq-us-O2l">
                                 <rect key="frame" x="15" y="15" width="306" height="17"/>
@@ -32,26 +32,26 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="55r-rT-v9f">
-                                <rect key="frame" x="15" y="120" width="306" height="1"/>
+                                <rect key="frame" x="15" y="138" width="306" height="1"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor" red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="s6n-vJ-Ns7"/>
                                 </constraints>
                             </view>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="￥600" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t2c-7m-Tkq">
-                                <rect key="frame" x="268.5" y="130" width="52.5" height="21.5"/>
+                                <rect key="frame" x="268.5" y="148" width="52.5" height="21.5"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="9班可选择" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N2r-Dy-y4v">
-                                <rect key="frame" x="15" y="133.5" width="57" height="14.5"/>
+                                <rect key="frame" x="15" y="151.5" width="57" height="14.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="zFO-0J-Qxj">
-                                <rect key="frame" x="15" y="70" width="306" height="35"/>
+                                <rect key="frame" x="15" y="88" width="306" height="35"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="d3a-fc-7W4"/>
@@ -64,7 +64,7 @@
                                 </collectionViewFlowLayout>
                             </collectionView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="Hcq-us-O2l" firstAttribute="top" secondItem="1GZ-vn-oDK" secondAttribute="top" constant="15" id="2Tx-Qj-O6a"/>
                             <constraint firstItem="6UM-Er-6Na" firstAttribute="top" secondItem="Hcq-us-O2l" secondAttribute="bottom" constant="8" id="4ub-Pz-Vnc"/>
@@ -87,14 +87,15 @@
                 </subviews>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="1GZ-vn-oDK" secondAttribute="trailing" constant="15" id="5CX-t9-vZs"/>
-                    <constraint firstAttribute="bottom" secondItem="1GZ-vn-oDK" secondAttribute="bottom" constant="15" id="n3h-9S-BCf"/>
-                    <constraint firstItem="1GZ-vn-oDK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="nup-7o-Xg9"/>
+                    <constraint firstAttribute="bottom" secondItem="1GZ-vn-oDK" secondAttribute="bottom" constant="6" id="n3h-9S-BCf"/>
+                    <constraint firstItem="1GZ-vn-oDK" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="6" id="nup-7o-Xg9"/>
                     <constraint firstItem="1GZ-vn-oDK" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="qZi-N5-EYe"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="collectionView" destination="zFO-0J-Qxj" id="dE9-YC-bwf"/>
+                <outlet property="lineView" destination="55r-rT-v9f" id="MoL-ot-oQM"/>
                 <outlet property="rmbLab" destination="t2c-7m-Tkq" id="yXT-rm-vag"/>
                 <outlet property="selectClassLab" destination="N2r-Dy-y4v" id="NGn-W4-oEr"/>
                 <outlet property="subTitleLab" destination="6UM-Er-6Na" id="qUM-Rr-r0h"/>

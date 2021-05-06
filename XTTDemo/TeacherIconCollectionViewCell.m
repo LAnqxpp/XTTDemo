@@ -12,7 +12,8 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    
+    self.contentView.backgroundColor = [UIColor colorWithHexString:@"#F4F5F9"];
+
     self.teaIconImg.layer.masksToBounds = YES;
     self.teaIconImg.layer.cornerRadius = 15;
     // Initialization code
