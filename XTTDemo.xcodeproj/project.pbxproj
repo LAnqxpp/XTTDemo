@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		162AAD7A2644F64400342F03 /* XBKCellFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 162AAD792644F64400342F03 /* XBKCellFactory.m */; };
+		168E8B1426462CC600FC4D56 /* CJJTimerViewConfiguration+Invoke.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E8B0E26462CC600FC4D56 /* CJJTimerViewConfiguration+Invoke.m */; };
+		168E8B1526462CC600FC4D56 /* CJJSMSTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E8B1026462CC600FC4D56 /* CJJSMSTimer.m */; };
+		168E8B1626462CC600FC4D56 /* CJJTimerViewConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E8B1126462CC600FC4D56 /* CJJTimerViewConfiguration.m */; };
+		168E8B1726462CC600FC4D56 /* CJJTimerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E8B1226462CC600FC4D56 /* CJJTimerView.m */; };
+		168E8B672646456700FC4D56 /* DishBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 168E8B662646456600FC4D56 /* DishBaseViewController.m */; };
 		16A4B29A263BF697001F1FEC /* DetailTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4B298263BF697001F1FEC /* DetailTableViewCell.m */; };
 		16A4B29B263BF697001F1FEC /* DetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16A4B299263BF697001F1FEC /* DetailTableViewCell.xib */; };
 		16A4B29F263BF87A001F1FEC /* DetailCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16A4B29D263BF87A001F1FEC /* DetailCollectionViewCell.m */; };
@@ -176,14 +182,6 @@
 		16B6914A2643D07400CE5F0E /* KKPresentBottom.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B691462643D07300CE5F0E /* KKPresentBottom.m */; };
 		16B6914B2643D07400CE5F0E /* UIViewController+KKExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B691482643D07300CE5F0E /* UIViewController+KKExtension.m */; };
 		16B6914E2643D09C00CE5F0E /* FeedBackViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 16B6914D2643D09C00CE5F0E /* FeedBackViewController.m */; };
-		16BED0F2263B9631004A79F1 /* ZJJTimeCountDownCellManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0E2263B9631004A79F1 /* ZJJTimeCountDownCellManager.m */; };
-		16BED0F3263B9631004A79F1 /* ZJJTimeCountDownLabelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0E3263B9631004A79F1 /* ZJJTimeCountDownLabelManager.m */; };
-		16BED0F4263B9631004A79F1 /* ZJJTimeCountDownButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0E4263B9631004A79F1 /* ZJJTimeCountDownButton.m */; };
-		16BED0F5263B9631004A79F1 /* ZJJTimeCountDownDateTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0E6263B9631004A79F1 /* ZJJTimeCountDownDateTool.m */; };
-		16BED0F6263B9631004A79F1 /* ZJJTimeCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0E8263B9631004A79F1 /* ZJJTimeCountDown.m */; };
-		16BED0F7263B9631004A79F1 /* ZJJTimeCountDownLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0E9263B9631004A79F1 /* ZJJTimeCountDownLabel.m */; };
-		16BED0F8263B9631004A79F1 /* ZJJTimeCountDownLabelTextStlyeTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0EC263B9631004A79F1 /* ZJJTimeCountDownLabelTextStlyeTool.m */; };
-		16BED0F9263B9631004A79F1 /* UIImage+ZJJTimeCountDown.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0F1263B9631004A79F1 /* UIImage+ZJJTimeCountDown.m */; };
 		16BED0FC263B9C09004A79F1 /* XBKBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0FB263B9C09004A79F1 /* XBKBaseModel.m */; };
 		16BED100263BACE2004A79F1 /* TeacherIconCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 16BED0FE263BACE2004A79F1 /* TeacherIconCollectionViewCell.m */; };
 		16BED101263BACE2004A79F1 /* TeacherIconCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 16BED0FF263BACE2004A79F1 /* TeacherIconCollectionViewCell.xib */; };
@@ -222,6 +220,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162AAD782644F64400342F03 /* XBKCellFactory.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBKCellFactory.h; sourceTree = "<group>"; };
+		162AAD792644F64400342F03 /* XBKCellFactory.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBKCellFactory.m; sourceTree = "<group>"; };
+		168E8B0A26462CC600FC4D56 /* CJJTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJJTimer.h; sourceTree = "<group>"; };
+		168E8B0B26462CC600FC4D56 /* CJJSMSTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJJSMSTimer.h; sourceTree = "<group>"; };
+		168E8B0C26462CC600FC4D56 /* CJJTimerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJJTimerView.h; sourceTree = "<group>"; };
+		168E8B0D26462CC600FC4D56 /* CJJTimerViewConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJJTimerViewConfiguration.h; sourceTree = "<group>"; };
+		168E8B0E26462CC600FC4D56 /* CJJTimerViewConfiguration+Invoke.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CJJTimerViewConfiguration+Invoke.m"; sourceTree = "<group>"; };
+		168E8B0F26462CC600FC4D56 /* CJJTimerMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CJJTimerMacro.h; sourceTree = "<group>"; };
+		168E8B1026462CC600FC4D56 /* CJJSMSTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJJSMSTimer.m; sourceTree = "<group>"; };
+		168E8B1126462CC600FC4D56 /* CJJTimerViewConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJJTimerViewConfiguration.m; sourceTree = "<group>"; };
+		168E8B1226462CC600FC4D56 /* CJJTimerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CJJTimerView.m; sourceTree = "<group>"; };
+		168E8B1326462CC600FC4D56 /* CJJTimerViewConfiguration+Invoke.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CJJTimerViewConfiguration+Invoke.h"; sourceTree = "<group>"; };
+		168E8B652646456600FC4D56 /* DishBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DishBaseViewController.h; sourceTree = "<group>"; };
+		168E8B662646456600FC4D56 /* DishBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DishBaseViewController.m; sourceTree = "<group>"; };
 		16A4B297263BF697001F1FEC /* DetailTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailTableViewCell.h; sourceTree = "<group>"; };
 		16A4B298263BF697001F1FEC /* DetailTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailTableViewCell.m; sourceTree = "<group>"; };
 		16A4B299263BF697001F1FEC /* DetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailTableViewCell.xib; sourceTree = "<group>"; };
@@ -619,22 +631,6 @@
 		16B691492643D07400CE5F0E /* KKPresentBottom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKPresentBottom.h; sourceTree = "<group>"; };
 		16B6914C2643D09C00CE5F0E /* FeedBackViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedBackViewController.h; sourceTree = "<group>"; };
 		16B6914D2643D09C00CE5F0E /* FeedBackViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FeedBackViewController.m; sourceTree = "<group>"; };
-		16BED0E2263B9631004A79F1 /* ZJJTimeCountDownCellManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJTimeCountDownCellManager.m; sourceTree = "<group>"; };
-		16BED0E3263B9631004A79F1 /* ZJJTimeCountDownLabelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJTimeCountDownLabelManager.m; sourceTree = "<group>"; };
-		16BED0E4263B9631004A79F1 /* ZJJTimeCountDownButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJTimeCountDownButton.m; sourceTree = "<group>"; };
-		16BED0E5263B9631004A79F1 /* ZJJTimeCountDownLabelTextStlyeTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJTimeCountDownLabelTextStlyeTool.h; sourceTree = "<group>"; };
-		16BED0E6263B9631004A79F1 /* ZJJTimeCountDownDateTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJTimeCountDownDateTool.m; sourceTree = "<group>"; };
-		16BED0E7263B9631004A79F1 /* UIImage+ZJJTimeCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ZJJTimeCountDown.h"; sourceTree = "<group>"; };
-		16BED0E8263B9631004A79F1 /* ZJJTimeCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJTimeCountDown.m; sourceTree = "<group>"; };
-		16BED0E9263B9631004A79F1 /* ZJJTimeCountDownLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJTimeCountDownLabel.m; sourceTree = "<group>"; };
-		16BED0EA263B9631004A79F1 /* ZJJTimeCountDownLabelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJTimeCountDownLabelManager.h; sourceTree = "<group>"; };
-		16BED0EB263B9631004A79F1 /* ZJJTimeCountDownCellManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJTimeCountDownCellManager.h; sourceTree = "<group>"; };
-		16BED0EC263B9631004A79F1 /* ZJJTimeCountDownLabelTextStlyeTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZJJTimeCountDownLabelTextStlyeTool.m; sourceTree = "<group>"; };
-		16BED0ED263B9631004A79F1 /* ZJJTimeCountDownButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJTimeCountDownButton.h; sourceTree = "<group>"; };
-		16BED0EE263B9631004A79F1 /* ZJJTimeCountDownDateTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJTimeCountDownDateTool.h; sourceTree = "<group>"; };
-		16BED0EF263B9631004A79F1 /* ZJJTimeCountDownLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJTimeCountDownLabel.h; sourceTree = "<group>"; };
-		16BED0F0263B9631004A79F1 /* ZJJTimeCountDown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZJJTimeCountDown.h; sourceTree = "<group>"; };
-		16BED0F1263B9631004A79F1 /* UIImage+ZJJTimeCountDown.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ZJJTimeCountDown.m"; sourceTree = "<group>"; };
 		16BED0FA263B9C09004A79F1 /* XBKBaseModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XBKBaseModel.h; sourceTree = "<group>"; };
 		16BED0FB263B9C09004A79F1 /* XBKBaseModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = XBKBaseModel.m; sourceTree = "<group>"; };
 		16BED0FD263BACE2004A79F1 /* TeacherIconCollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TeacherIconCollectionViewCell.h; sourceTree = "<group>"; };
@@ -701,6 +697,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		168E8B0926462CC600FC4D56 /* CJJTimer */ = {
+			isa = PBXGroup;
+			children = (
+				168E8B0A26462CC600FC4D56 /* CJJTimer.h */,
+				168E8B0B26462CC600FC4D56 /* CJJSMSTimer.h */,
+				168E8B0C26462CC600FC4D56 /* CJJTimerView.h */,
+				168E8B0D26462CC600FC4D56 /* CJJTimerViewConfiguration.h */,
+				168E8B0E26462CC600FC4D56 /* CJJTimerViewConfiguration+Invoke.m */,
+				168E8B0F26462CC600FC4D56 /* CJJTimerMacro.h */,
+				168E8B1026462CC600FC4D56 /* CJJSMSTimer.m */,
+				168E8B1126462CC600FC4D56 /* CJJTimerViewConfiguration.m */,
+				168E8B1226462CC600FC4D56 /* CJJTimerView.m */,
+				168E8B1326462CC600FC4D56 /* CJJTimerViewConfiguration+Invoke.h */,
+			);
+			name = CJJTimer;
+			path = "../../../Downloads/CJJTimer-master/Example/CJJTimer/CJJTimer";
+			sourceTree = "<group>";
+		};
 		16B153AD263A6C55000B5972 = {
 			isa = PBXGroup;
 			children = (
@@ -724,13 +738,13 @@
 		16B153B8263A6C55000B5972 /* XTTDemo */ = {
 			isa = PBXGroup;
 			children = (
+				168E8B0926462CC600FC4D56 /* CJJTimer */,
 				16B691492643D07400CE5F0E /* KKPresentBottom.h */,
 				16B691462643D07300CE5F0E /* KKPresentBottom.m */,
 				16B691472643D07300CE5F0E /* UIViewController+KKExtension.h */,
 				16B691482643D07300CE5F0E /* UIViewController+KKExtension.m */,
 				16BED103263BCB4A004A79F1 /* NSMutableAttributedString+ZM.h */,
 				16BED102263BCB4A004A79F1 /* NSMutableAttributedString+ZM.m */,
-				16BED0E1263B9631004A79F1 /* ZJJTimeCountDown */,
 				16A57B47263A9CC000FC0EDA /* UIColor+Hex.h */,
 				16A57B46263A9CC000FC0EDA /* UIColor+Hex.m */,
 				16B15611263A945B000B5972 /* UIWindow+JXSafeArea.h */,
@@ -739,6 +753,8 @@
 				16B1560E263A9407000B5972 /* LoadDataBaseViewController.m */,
 				16B15614263A949B000B5972 /* LoadDataListBaseViewController.h */,
 				16B15613263A949B000B5972 /* LoadDataListBaseViewController.m */,
+				168E8B652646456600FC4D56 /* DishBaseViewController.h */,
+				168E8B662646456600FC4D56 /* DishBaseViewController.m */,
 				16B15617263A94AD000B5972 /* DetailViewController.h */,
 				16B15616263A94AD000B5972 /* DetailViewController.m */,
 				16A4B297263BF697001F1FEC /* DetailTableViewCell.h */,
@@ -762,6 +778,8 @@
 				16BED0FB263B9C09004A79F1 /* XBKBaseModel.m */,
 				16B15405263A865A000B5972 /* XTTXBKViewController.h */,
 				16B15406263A865A000B5972 /* XTTXBKViewController.m */,
+				162AAD782644F64400342F03 /* XBKCellFactory.h */,
+				162AAD792644F64400342F03 /* XBKCellFactory.m */,
 				16A57B60263AA23D00FC0EDA /* XBTHBaseTableViewCell.h */,
 				16A57B61263AA23D00FC0EDA /* XBTHBaseTableViewCell.m */,
 				16A57B62263AA23D00FC0EDA /* XBTHBaseTableViewCell.xib */,
@@ -1360,29 +1378,6 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
-		16BED0E1263B9631004A79F1 /* ZJJTimeCountDown */ = {
-			isa = PBXGroup;
-			children = (
-				16BED0E2263B9631004A79F1 /* ZJJTimeCountDownCellManager.m */,
-				16BED0E3263B9631004A79F1 /* ZJJTimeCountDownLabelManager.m */,
-				16BED0E4263B9631004A79F1 /* ZJJTimeCountDownButton.m */,
-				16BED0E5263B9631004A79F1 /* ZJJTimeCountDownLabelTextStlyeTool.h */,
-				16BED0E6263B9631004A79F1 /* ZJJTimeCountDownDateTool.m */,
-				16BED0E7263B9631004A79F1 /* UIImage+ZJJTimeCountDown.h */,
-				16BED0E8263B9631004A79F1 /* ZJJTimeCountDown.m */,
-				16BED0E9263B9631004A79F1 /* ZJJTimeCountDownLabel.m */,
-				16BED0EA263B9631004A79F1 /* ZJJTimeCountDownLabelManager.h */,
-				16BED0EB263B9631004A79F1 /* ZJJTimeCountDownCellManager.h */,
-				16BED0EC263B9631004A79F1 /* ZJJTimeCountDownLabelTextStlyeTool.m */,
-				16BED0ED263B9631004A79F1 /* ZJJTimeCountDownButton.h */,
-				16BED0EE263B9631004A79F1 /* ZJJTimeCountDownDateTool.h */,
-				16BED0EF263B9631004A79F1 /* ZJJTimeCountDownLabel.h */,
-				16BED0F0263B9631004A79F1 /* ZJJTimeCountDown.h */,
-				16BED0F1263B9631004A79F1 /* UIImage+ZJJTimeCountDown.m */,
-			);
-			path = ZJJTimeCountDown;
-			sourceTree = "<group>";
-		};
 		16BED10A263BE069004A79F1 /* Masonry */ = {
 			isa = PBXGroup;
 			children = (
@@ -1584,8 +1579,6 @@
 				16B15506263A873C000B5972 /* SDImageCacheConfig.m in Sources */,
 				16B154DC263A873C000B5972 /* SDImageIOAnimatedCoder.m in Sources */,
 				16B15584263A88B4000B5972 /* JXCategoryIndicatorBackgroundView.m in Sources */,
-				16BED0F6263B9631004A79F1 /* ZJJTimeCountDown.m in Sources */,
-				16BED0F4263B9631004A79F1 /* ZJJTimeCountDownButton.m in Sources */,
 				16B154DA263A873C000B5972 /* SDWebImageDownloaderDecryptor.m in Sources */,
 				16B1557F263A88B4000B5972 /* JXCategoryIndicatorRainbowLineView.m in Sources */,
 				16BED129263BE06A004A79F1 /* MASLayoutConstraint.m in Sources */,
@@ -1595,7 +1588,6 @@
 				16B154F7263A873C000B5972 /* UIImage+ExtendedCacheData.m in Sources */,
 				16B15507263A873C000B5972 /* SDWebImageCacheKeyFilter.m in Sources */,
 				16BED104263BCB4A004A79F1 /* NSMutableAttributedString+ZM.m in Sources */,
-				16BED0F7263B9631004A79F1 /* ZJJTimeCountDownLabel.m in Sources */,
 				16B15596263A88B4000B5972 /* JXCategoryNumberCellModel.m in Sources */,
 				16B1559C263A88B4000B5972 /* UIColor+JXAdd.m in Sources */,
 				16B15518263A873C000B5972 /* SDAsyncBlockOperation.m in Sources */,
@@ -1609,11 +1601,11 @@
 				16B6914E2643D09C00CE5F0E /* FeedBackViewController.m in Sources */,
 				16B15509263A873C000B5972 /* SDWebImageOptionsProcessor.m in Sources */,
 				16B15504263A873C000B5972 /* SDImageCacheDefine.m in Sources */,
+				162AAD7A2644F64400342F03 /* XBKCellFactory.m in Sources */,
 				16B15500263A873C000B5972 /* SDImageTransformer.m in Sources */,
 				16BED127263BE06A004A79F1 /* MASCompositeConstraint.m in Sources */,
 				16B155FF263A93F5000B5972 /* MJRefreshBackGifFooter.m in Sources */,
 				16B15508263A873C000B5972 /* SDWebImageDefine.m in Sources */,
-				16BED0F2263B9631004A79F1 /* ZJJTimeCountDownCellManager.m in Sources */,
 				16B15501263A873C000B5972 /* NSData+ImageContentType.m in Sources */,
 				16B1560F263A9407000B5972 /* LoadDataBaseViewController.m in Sources */,
 				16B15512263A873C000B5972 /* SDDeviceHelper.m in Sources */,
@@ -1622,7 +1614,6 @@
 				16B6914A2643D07400CE5F0E /* KKPresentBottom.m in Sources */,
 				16B15608263A93F5000B5972 /* MJRefreshFooter.m in Sources */,
 				16A4B29F263BF87A001F1FEC /* DetailCollectionViewCell.m in Sources */,
-				16BED0F8263B9631004A79F1 /* ZJJTimeCountDownLabelTextStlyeTool.m in Sources */,
 				16B155A0263A88B4000B5972 /* JXCategoryBaseCellModel.m in Sources */,
 				16B15607263A93F5000B5972 /* MJRefreshGifHeader.m in Sources */,
 				16B15503263A873C000B5972 /* SDImageGraphics.m in Sources */,
@@ -1645,17 +1636,16 @@
 				16B15601263A93F5000B5972 /* MJRefreshBackNormalFooter.m in Sources */,
 				16B154E4263A873C000B5972 /* SDWebImageDownloader.m in Sources */,
 				16B1558A263A88B4000B5972 /* JXCategoryDotCellModel.m in Sources */,
-				16BED0F3263B9631004A79F1 /* ZJJTimeCountDownLabelManager.m in Sources */,
 				16B154FE263A873C000B5972 /* SDImageCachesManager.m in Sources */,
 				16B15516263A873C000B5972 /* NSBezierPath+SDRoundedCorners.m in Sources */,
 				16B15401263A8457000B5972 /* TADotView.m in Sources */,
 				16B154EB263A873C000B5972 /* UIImage+MultiFormat.m in Sources */,
 				16BED126263BE06A004A79F1 /* ViewController+MASAdditions.m in Sources */,
 				16B155FD263A93F5000B5972 /* NSBundle+MJRefresh.m in Sources */,
+				168E8B1726462CC600FC4D56 /* CJJTimerView.m in Sources */,
 				16B1550B263A873C000B5972 /* UIView+WebCache.m in Sources */,
 				16B15514263A873C000B5972 /* SDInternalMacros.m in Sources */,
 				16B154F8263A873C000B5972 /* SDWebImageDownloaderConfig.m in Sources */,
-				16BED0F9263B9631004A79F1 /* UIImage+ZJJTimeCountDown.m in Sources */,
 				16B1558E263A88B4000B5972 /* JXCategoryTitleCellModel.m in Sources */,
 				16B1557D263A88B4000B5972 /* JXCategoryIndicatorLineView.m in Sources */,
 				16B15583263A88B4000B5972 /* JXCategoryIndicatorDotLineView.m in Sources */,
@@ -1683,6 +1673,7 @@
 				16B15517263A873C000B5972 /* SDDisplayLink.m in Sources */,
 				16B1557A263A88B4000B5972 /* JXCategoryTitleVerticalZoomCell.m in Sources */,
 				16B1558D263A88B4000B5972 /* JXCategoryTitleImageCellModel.m in Sources */,
+				168E8B1626462CC600FC4D56 /* CJJTimerViewConfiguration.m in Sources */,
 				16B1560A263A93F5000B5972 /* MJRefreshBackFooter.m in Sources */,
 				16B15591263A88B4000B5972 /* JXCategoryImageView.m in Sources */,
 				16B691352643992A00CE5F0E /* UIScrollView+EmptyDataSet.m in Sources */,
@@ -1702,6 +1693,7 @@
 				16B154ED263A873C000B5972 /* SDWebImageCompat.m in Sources */,
 				16B155FE263A93F5000B5972 /* UIView+MJExtension.m in Sources */,
 				16B154F9263A873C000B5972 /* SDImageCache.m in Sources */,
+				168E8B1526462CC600FC4D56 /* CJJSMSTimer.m in Sources */,
 				16B15600263A93F5000B5972 /* MJRefreshBackStateFooter.m in Sources */,
 				16B1558F263A88B4000B5972 /* JXCategoryTitleCell.m in Sources */,
 				16BED128263BE06A004A79F1 /* MASConstraintMaker.m in Sources */,
@@ -1715,6 +1707,7 @@
 				16B153FE263A8457000B5972 /* SDCycleScrollView.m in Sources */,
 				16B154E2263A873C000B5972 /* SDAnimatedImagePlayer.m in Sources */,
 				16B154DB263A873C000B5972 /* SDWebImageManager.m in Sources */,
+				168E8B1426462CC600FC4D56 /* CJJTimerViewConfiguration+Invoke.m in Sources */,
 				16B154EA263A873C000B5972 /* SDImageCodersManager.m in Sources */,
 				16B154D9263A873C000B5972 /* SDWebImageOperation.m in Sources */,
 				16B154E1263A873C000B5972 /* SDImageAWebPCoder.m in Sources */,
@@ -1733,7 +1726,7 @@
 				16B15602263A93F5000B5972 /* MJRefreshAutoStateFooter.m in Sources */,
 				16B154F5263A873C000B5972 /* SDDiskCache.m in Sources */,
 				16B15590263A88B4000B5972 /* JXCategoryTitleView.m in Sources */,
-				16BED0F5263B9631004A79F1 /* ZJJTimeCountDownDateTool.m in Sources */,
+				168E8B672646456700FC4D56 /* DishBaseViewController.m in Sources */,
 				16B154E3263A873C000B5972 /* UIImage+Transform.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1903,16 +1896,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PGF38WQ888;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XTTDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = XTTDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xtt.XTTDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = xtt8888.XTTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -1921,16 +1917,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = PGF38WQ888;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_PREFIX_HEADER = "$(SRCROOT)/XTTDemo/PrefixHeader.pch";
 				INFOPLIST_FILE = XTTDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = xtt.XTTDemo;
+				PRODUCT_BUNDLE_IDENTIFIER = xtt8888.XTTDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

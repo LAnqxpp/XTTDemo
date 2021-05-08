@@ -33,12 +33,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="倒计时" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hV9-is-d66" customClass="ZJJTimeCountDownLabel">
-                                <rect key="frame" x="168" y="60" width="179" height="14.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ncg-Ey-dWN">
                                 <rect key="frame" x="287" y="89" width="60" height="24"/>
                                 <constraints>
@@ -61,10 +55,7 @@
                             <constraint firstItem="NAZ-ji-df3" firstAttribute="top" secondItem="Eg6-Bc-LaE" secondAttribute="top" id="99D-eS-Oeh"/>
                             <constraint firstItem="ncg-Ey-dWN" firstAttribute="bottom" secondItem="Eg6-Bc-LaE" secondAttribute="bottom" id="DXH-3y-6Og"/>
                             <constraint firstAttribute="trailing" secondItem="NAZ-ji-df3" secondAttribute="trailing" constant="15" id="EcE-g9-iMW"/>
-                            <constraint firstItem="hV9-is-d66" firstAttribute="top" secondItem="NAZ-ji-df3" secondAttribute="bottom" constant="10" id="FkQ-JA-BF7"/>
-                            <constraint firstItem="hV9-is-d66" firstAttribute="trailing" secondItem="NAZ-ji-df3" secondAttribute="trailing" id="LfV-Yi-so4"/>
                             <constraint firstItem="Eg6-Bc-LaE" firstAttribute="leading" secondItem="p12-Ai-x1c" secondAttribute="leading" constant="15" id="OC3-fj-nb3"/>
-                            <constraint firstItem="hV9-is-d66" firstAttribute="leading" secondItem="NAZ-ji-df3" secondAttribute="leading" id="R9z-QV-FW6"/>
                             <constraint firstItem="bHG-pk-QBS" firstAttribute="leading" secondItem="NAZ-ji-df3" secondAttribute="leading" id="Uc0-Ji-SxU"/>
                             <constraint firstItem="Eg6-Bc-LaE" firstAttribute="centerY" secondItem="p12-Ai-x1c" secondAttribute="centerY" id="g8a-79-5Qz"/>
                             <constraint firstItem="NAZ-ji-df3" firstAttribute="leading" secondItem="Eg6-Bc-LaE" secondAttribute="trailing" constant="13" id="np6-fS-1Ke"/>
@@ -83,12 +74,11 @@
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
             <connections>
                 <outlet property="buyBtn" destination="ncg-Ey-dWN" id="oQZ-Mb-dJ7"/>
-                <outlet property="countdownLab" destination="hV9-is-d66" id="KnS-u8-HqU"/>
                 <outlet property="leftImg" destination="Eg6-Bc-LaE" id="ldb-r6-TuE"/>
                 <outlet property="rmbLab" destination="bHG-pk-QBS" id="6II-Rv-5xO"/>
                 <outlet property="titleLab" destination="NAZ-ji-df3" id="96f-oB-9UM"/>
             </connections>
-            <point key="canvasLocation" x="98.550724637681171" y="93.75"/>
+            <point key="canvasLocation" x="-7.2463768115942031" y="-249.10714285714283"/>
         </tableViewCell>
     </objects>
 </document>

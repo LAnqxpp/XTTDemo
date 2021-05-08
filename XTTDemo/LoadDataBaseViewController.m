@@ -30,8 +30,7 @@
 }
 
 - (NSArray <NSString *> *)getRandomTitles {
-    NSMutableArray *titles = @[@"精选", @"数学", @"英语", @"语文", @"化学", @"物理"].mutableCopy;
- 
+    NSMutableArray *titles = @[@"精选", @"数学",@"英语", @"语文", @"化学", @"物理"].mutableCopy;
     return titles;
 }
 

@@ -8,10 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoadDataListBaseViewController : UITableViewController<ZJJTimeCountDownDelegate,DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
+@interface LoadDataListBaseViewController : UITableViewController<DZNEmptyDataSetSource, DZNEmptyDataSetDelegate>
 @property(nonatomic,strong) NSMutableArray *dataList;
-
-@property(nonatomic,strong) ZJJTimeCountDown * countDown;
 
 @property (nonatomic, strong) UINavigationController *naviController;
 @property (nonatomic, copy) void(^didScrollCallback)(UIScrollView *scrollView);

@@ -9,6 +9,7 @@
 #import "XTTXBKViewController.h"
 #import "JXCategoryView.h"
 #import "LoadDataListBaseViewController.h"
+#import "DishBaseViewController.h"
 #import "UIWindow+JXSafeArea.h"
 #import "XBKFindViewController.h"
 @interface XTTXBKViewController ()<JXCategoryViewDelegate>
@@ -20,10 +21,6 @@
 @implementation XTTXBKViewController
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
- 
     
 
     CGFloat naviHeight = [UIApplication.sharedApplication.keyWindow jx_navigationHeight];
@@ -86,18 +83,38 @@
     [self.listVCArray removeAllObjects];
 
     for (int i = 0; i < titles.count; i ++) {
-        LoadDataListBaseViewController *listVC = [[LoadDataListBaseViewController alloc] initWithStyle:UITableViewStylePlain];
-        listVC.naviController = self.navigationController;
-        listVC.view.frame = CGRectMake(i*self.scrollView.bounds.size.width, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
-        //如果列表是UIViewController包裹的，需要添加addChildViewController代码，这样子在iPhoneX系列手机就不会有底部安全距离错误的问题！！！
-        [self addChildViewController:listVC];
-        [self.listVCArray addObject:listVC];
+                NSString *titleString = titles[i];
+        if ([titleString  isEqualToString:@"精选"]) {
+            
+            DishBaseViewController *dlistVC = [[DishBaseViewController alloc] initWithStyle:UITableViewStylePlain];
+            dlistVC.naviController = self.navigationController;
+                   dlistVC.view.frame = CGRectMake(i*self.scrollView.bounds.size.width, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
+                   //如果列表是UIViewController包裹的，需要添加addChildViewController代码，这样子在iPhoneX系列手机就不会有底部安全距离错误的问题！！！
+                   [self addChildViewController:dlistVC];
+                   [self.listVCArray addObject:dlistVC];
+        }else {
+           LoadDataListBaseViewController *listVC = [[LoadDataListBaseViewController alloc] initWithStyle:UITableViewStylePlain];
+            listVC.naviController = self.navigationController;
+                listVC.view.frame = CGRectMake(i*self.scrollView.bounds.size.width, 0, self.scrollView.bounds.size.width, self.scrollView.bounds.size.height);
+                //如果列表是UIViewController包裹的，需要添加addChildViewController代码，这样子在iPhoneX系列手机就不会有底部安全距离错误的问题！！！
+                [self addChildViewController:listVC];
+                [self.listVCArray addObject:listVC];
+        }
+        
     }
 
     //根据新的数据源重新添加listView
     for (int i = 0; i < titles.count; i ++) {
+        NSString *titleString = titles[i];
+           if ([titleString  isEqualToString:@"精选"]) {
+               DishBaseViewController *dlistVC = self.listVCArray[i];
+                  [self.scrollView addSubview:dlistVC.view];
+               
+           }else {
+        
         LoadDataListBaseViewController *listVC = self.listVCArray[i];
         [self.scrollView addSubview:listVC.view];
+           }
     }
     self.scrollView.contentSize = CGSizeMake(self.scrollView.bounds.size.width*titles.count, self.scrollView.bounds.size.height);
 

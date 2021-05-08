@@ -13,7 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface XBTHBaseTableViewCell : UITableViewCell
 
 
-
+-(void)getDataWithModel:(id)model;
 
 
 @end

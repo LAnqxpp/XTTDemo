@@ -15,7 +15,6 @@
 #import "JXCategoryView.h"
 #import "SDCycleScrollView.h"
 #import "UIColor+Hex.h"
-#import "ZJJTimeCountDown.h"
 #import "NSMutableAttributedString+ZM.h"
 #import "Masonry.h"
 #import "UIScrollView+EmptyDataSet.h"

@@ -11,6 +11,13 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface XBKBaseModel : NSObject
+
+@property (nonatomic ,strong)NSString *title;
+
+@property (nonatomic ,strong)NSString *subTitle;
+
+@property (nonatomic ,strong) NSString *type;
+
 @property (nonatomic ,strong) NSString *startTime;
 
 @property (nonatomic ,strong) NSString *endTime;
